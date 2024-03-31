@@ -71,3 +71,7 @@ footer a {
   text-decoration: none;
   color: rgba(236, 19, 19, 0.8);
 }
+
+.quote strong {
+  color: rgba(236, 19, 19, 0.8);
+}
