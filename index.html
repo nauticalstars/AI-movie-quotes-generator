@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="src/styles.css">
   <title>🍿AI Movie Quotes</title>
 </head>
@@ -17,15 +18,13 @@
       <h1>Welcome to my movie quote generator!</h1>
     </header>
     <main>
-      <form>
+      <form id="quote-generator-form">
         <input class="information" type="text" placeholder="Enter a movie actor/actress's name here." autofocus required
           autocomplete="off" />
         <input type="submit" class="submit-button" />
       </form>
 
-      <div class="quote">
-        quote will go here
-      </div>
+      <div class="quote" id="quote"></div>
 
     </main>
     <footer> This AI project was coded with 🖤 by <a href="https://github.com/nauticalstars" target="_blank">Daria
