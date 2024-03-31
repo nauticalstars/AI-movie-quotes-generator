@@ -16,6 +16,9 @@ function generateQuote(event) {
     "You are a movie nerd that knows all the famous quotes from all movies and actors and actresses ever made. Please provide only 4 examples and the movies they are from, short one sentance quotes in basic HTML and separate each line with a <br />. Do not include search title. Sign your signature 'SheCodes AI' inside a <strong> element at the end of the search data.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayQuote);
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="blink">⏳ Loading quotes from ${userInput.value}</div>`;
 }
 
 let quoteForm = document.querySelector("#quote-generator-form");
